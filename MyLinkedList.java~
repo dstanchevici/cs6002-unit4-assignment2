@@ -1,0 +1,8 @@
+// 4.a2.1 class used in StrangeCardGame2.java
+
+class ListItem {
+    int card;
+    ListItem next;
+}
+
+public class MyLinkedList
