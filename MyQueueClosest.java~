@@ -1,0 +1,45 @@
+
+class QueueItem {
+    Coords coords;      // Each node in the list stores this as data.
+    QueueItem next;     // The usual "next" pointer.
+    QueueItem prev;     // The usual "prev" pointer.
+}
+
+public class MyQueueClosest {
+
+    QueueItem front, rear;
+
+    public void add (Coords c)
+    {
+	// INSERT YOUR CODE HERE to add at the rear.
+    }
+
+    public Coords removeClosest (Coords antEater)
+    {
+	// INSERT YOUR CODE HERE to find the node that has
+	// the coords closest to that of the antEater. Then
+	// remove the node from the queue, and return that node's coords.
+    }
+
+    public boolean isEmpty ()
+    {
+	// INSERT YOUR CODE HERE
+    }
+
+    public int size ()
+    {
+	// INSERT YOUR CODE HERE
+    }
+
+    public Coords get (int k)
+    {
+	// INSERT YOUR CODE HERE
+    }
+
+    double distance (Coords p, Coords q)
+    {
+        double distSq = (p.x-q.x)*(p.x-q.x) + (p.y-q.y)*(p.y-q.y);
+        return Math.sqrt (distSq);
+    }
+
+}
