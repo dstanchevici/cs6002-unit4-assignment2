@@ -1,15 +1,15 @@
 
-class ListItem {
+class ListItem2 { // NOTE to grader: I changed "ListItem" to "ListItem2" so that it does not interefere with the class "ListItem" in StrangeCardGame2 and StrangeCardGameAnalysis
     String data;
-    ListItem next;
+    ListItem2 next;
 }
 
 
 class AssassinList {
 
     // The usual list variables.
-    ListItem front = null;
-    ListItem rear = null;
+    ListItem2 front = null;
+    ListItem2 rear = null;
 
     // To keep track of the size.
     int numItems = 0;
@@ -18,11 +18,11 @@ class AssassinList {
     public void add (String s)
     {
 	if (front == null) {
-	    front = rear = new ListItem ();
+	    front = rear = new ListItem2 ();
 	    front.data = s;
 	}
 	else {
-	    ListItem nextOne = new ListItem ();
+	    ListItem2 nextOne = new ListItem2 ();
 	    nextOne.data = s;
 	    rear.next = nextOne;
 	    rear = nextOne;
@@ -43,7 +43,7 @@ class AssassinList {
     {
 	String s = "";
 	
-	ListItem ptr = front;
+	ListItem2 ptr = front;
 	while (ptr != rear) {
 	    s += (ptr.data + ", ");
 	    ptr = ptr.next;
@@ -83,7 +83,7 @@ class AssassinList {
 	}	
 
 	boolean assassinOnList = false;
-	ListItem ptr = front.next;
+	ListItem2 ptr = front.next;
 	while (ptr != rear) {
 	    if ( ptr.data.equals(assassin) ) {		
 		assassinOnList = true;
