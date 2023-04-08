@@ -1,5 +1,5 @@
 // Unit 4, assignment 2, problem 3
-// Use by AntEaterClosest.java
+// Used by AntEaterClosest.java
 
 class QueueItem {
     Coords coords;      // Each node in the list stores this as data.
